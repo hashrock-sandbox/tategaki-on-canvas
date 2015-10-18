@@ -1,0 +1,18 @@
+{
+  "name": "tategaki-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "browserify main.js > dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:js": "watchify main.js -o dist/bundle.js -dv",
+    "postinstall": "npm run build:js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fontloader": "^1.2.2",
+    "vue": "^0.12.16"
+  }
+}

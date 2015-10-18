@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tategaki-canvas demo</title>
+	<style>
+		body{
+			background: gray;
+		}
+		canvas{
+			background: white;
+			-ms-writing-mode: tb-rl;
+			-webkit-writing-mode: vertical-rl;
+			writing-mode: vertical-rl;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div>
+			<textarea v-model="text" cols="30" rows="10" v-on="keyup: redraw"></textarea>
+		</div>
+		
+		<div>
+			<canvas id="canvas" width="300px" height="1200px"></canvas>
+			
+		</div>
+	</main>
+	
+	<script src="dist/bundle.js"></script>
+</body>
+</html>
